@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 style="color:rgb(0, 81, 255); font-size:40px;">
+Student Registration Portal
+</h1>
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+    <!-- Step 1 -->
+    <div class="step active">
+         <h3>Step 1 of 3</h3>
+    
+        <h2>Personal Details</h2>
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+         <h3>Step 2 of 3</h3>
+        <h2>Academic Details</h2>
+
+        <input type="text" id="college" placeholder="College">
+        <input type="text" id="branch" placeholder="Branch">
+
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+         <h3>Step 3 of 3</h3>
+        <h2>Review & Submit</h2>
+
+        <p id="summary"></p>
+
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
